@@ -58,71 +58,71 @@ p {
     h3 {
         font-size: 2.4rem;
         
-    }
+    }  
 
-    /* Links  */
 
-    a {
-        text-decoration: none;
-    }
+}
 
+/* Links  */
+
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: '-->';
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media  screen and (min-width: 1024px) {
     .link-arrow {
-        color: var(--color-accent);
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 1.5rem;
     }
+}
 
-    .link-arrow::after {
-        content: '-->';
-        margin-left: 5px;
-        transition: margin 0.15s;
-    }
+/*  Badges */
 
-    .link-arrow:hover::after {
-        margin-left: 10px;
-    }
+.badge {
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2rem;
+}
 
-    @media  screen and (min-width: 1024px) {
-        .link-arrow {
-            font-size: 1.5rem;
-        }
-    }
+.badge--primary {
+    background: var(--color-primary);
+    color: #fff;
 
-    /*  Badges */
+}
 
+.badge--secondary {
+    background: var(--color-secondary);        
+    color: #fff;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-widht: 1024px) {
     .badge {
-        border-radius: 20px;
-        padding: 0.5rem 2rem;
-        font-weight: 600;
-        white-space: nowrap;
-        font-size: 2rem;
-    }
-
-    .badge--primary {
-        background: var(--color-primary);
-        color: #fff;
-
-    }
-
-    .badge--secondary {
-        background: var(--color-secondary);        
-        color: #fff;
+        font-size: 1.5rem;
     }
 
     .badge--small {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
-
-    @media screen and (min-widht: 1024px) {
-        .badge {
-            font-size: 1.5rem;
-        }
-
-        .badge--small {
-            font-size: 1.2rem;
-        }
-    }
-
-
 }
